@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #131313;
+    background-image: url(img\Pokedex.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.search-box {
+    padding: 50px;
+}
+.underBorder {
+    width: 100vw;
+    border: 0;
+    border-bottom: 1px solid grey;
+    background: transparent;
+}

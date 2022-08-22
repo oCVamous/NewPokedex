@@ -1,65 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>New Pokedex</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img\Pokedex.png" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.rtl.min.css">
+    <!-- My personal script -->
     <script src="script.js"></script>
-    <script src="./modules/templates.js"></script>
-    <script src="bootstrap.js"></script>
-</head>
-<body onload="init()">
 
-    <nav class="navbar navbar-expand-lg bg-light">
-      
-        <div class="container-fluid justify-content-around">
-          <a class="index.html" href="#"><img src="img/Pokedex.png" style="height: 40px;" onclick="history.go(0)"></a></a>
-         
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+    <!-- My personal CSS -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body onload="init()" style="background-image: url('img\pokemon-bg.jpg');
+  height: 100vh">
 
-            <a class="btn btn-primary" data-bs-toggle="offcanvas" href="favoritePokemon.html" role="button" aria-controls="offcanvasExample">
-              My favorite Pokemons
-            </a>
-        </div>
-      </nav>
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-light navbar-light ">
+  <!-- Container wrapper -->
+  <div class="container-fluid">
+
+    <!-- Navbar brand -->
+    <a class="navbar-brand" href="#"><img src="img\Pokedex.png" style="height: 30px;"></a>
+    
+    <!-- Toggle button -->
+    <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <!-- Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+            More about the Programmer
+          </a>
+          <!-- Dropdown menu -->
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li>
+              <a class="dropdown-item" href="#">View this code on Github</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Impressum</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">Impressum</a>
+            </li>
+            <li>
+              <hr class="dropdown-divider" />
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">My Homepage</a>
+            </li>
+          </ul>
+        </li>
+
+      </ul>
+
+      <!-- Search -->
+      <form class="w-auto">
+        <input type="search" class="form-control" placeholder="Type query" aria-label="Search">
+      </form>
+
+    </div>
+  </div>
+  <!-- Container wrapper -->
+</nav>
+<!-- Navbar -->
+
+<div class="search-box d-flex ">
+  
+  <input class="underBorder" placeholder="Seach your Pokemon" type="text">
+  <img src="img\search-3-128.ico" style="height: 30px;">
+</div>
 
 
-      <div id="content">
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
 
-      </div>
-
-
-
-
-
-<!-- Button trigger modal -->
-<button onclick="showMoreInformation()" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
-</button>
-
-<!-- Modal -->
-<div id="moreInformationBox"></div>
-
-    <div class="credit-box">
-        Pokédex 2022 |Created by Patrick Sterz | API: https://pokeapi.co/
-   </div>
-   
-   <div class="front">
-       <h1>All Pokemons from the Kanto region</h1>
-   </div>
-
-
-<button onclick="showMyBtn()">Hi</button>
-<div id="show-btn"></div>
-
-
-     
-</body>
+    <!-- Custom scripts -->
+    <script type="text/javascript"></script>
+  </body>
 </html>
