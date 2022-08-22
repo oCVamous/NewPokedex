@@ -30,12 +30,12 @@
   <body onload="init()">
 
     <!-- Navbar -->
-<nav class="navbar navbar-expand-lg bg-light navbar-light sticky">
+<nav class="navbar navbar-expand-lg bg-light navbar-light ">
   <!-- Container wrapper -->
   <div class="container-fluid">
 
     <!-- Navbar brand -->
-    <a class="navbar-brand" data-mdb-toggle="tooltip" data-mdb-placement="bottom" title="Click for refresh the page" href="#"><img src="img\Pokedex.png" style="height: 30px;" onclick="history.go(0)"></a>
+    <a href="index.html" class="navbar-brand" data-mdb-toggle="tooltip" data-mdb-placement="bottom" title="Click for refresh the page" href="#"><img src="img\Pokedex.png" style="height: 30px;" onclick="history.go(0)"></a>
     
     <!-- Toggle button -->
     <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -89,12 +89,16 @@
 <div class="search-box d-flex ">
   
   <input class="underBorder" placeholder="Seach your Pokemon" type="text">
-  <img src="img\search-3-128.ico"  
-    data-mdb-toggle="tooltip" data-mdb-placement="left" title="Search Pokemon in full Pokedex"
+    <img src="img\search-3-128.ico"  
+    data-mdb-toggle="tooltip" data-mdb-placement="left" title="Search your favorite Pokemon"
     style="height: 30px;">
 </div>
 
-<h1>ALL Pokemon</h1>
+  
+
+
+
+<h1>Favorite Pokemons</h1>
 <div id="content"></div>
 
 
@@ -105,4 +109,3 @@
     <script type="text/javascript"></script>
   </body>
 </html>
-
